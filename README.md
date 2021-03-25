@@ -6,6 +6,7 @@ Animated Armor Script
 ### Requirements
 
 [mythic_progbar](https://github.com/HalCroves/mythic_progbar)
+
 [mythic_notify](https://github.com/JayMontana36/mythic_notify)
 
 ### Installation
