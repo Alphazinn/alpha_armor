@@ -12,6 +12,6 @@ Animated Armor Script
 
 ### Installation
 
-```sh
-Add "ensure alpha_armor" To Your server.cfg File
-```
+- Drag all files to your resources folder.
+- Import alpha.sql To Your Database
+- Add "ensure alpha_armor" to your server.cfg file
