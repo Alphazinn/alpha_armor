@@ -10,6 +10,8 @@ Animated Armor Script
 
 [mythic_notify](https://github.com/JayMontana36/mythic_notify)
 
+[mysql-async](https://github.com/brouznouf/fivem-mysql-async)
+
 ### Installation
 
 - Drag all files to your resources folder.
