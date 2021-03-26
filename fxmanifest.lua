@@ -3,8 +3,11 @@ game 'gta5'
 
 author 'Alpha'
 description 'Alpha Armor'
-version '1.0.0'
+version '1.1.0'
 
 client_script "client/client.lua"
 
-server_script "server/server.lua"
+server_scripts { 
+    '@mysql-async/lib/MySQL.lua',
+    'server/server.lua'
+}
