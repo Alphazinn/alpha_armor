@@ -1,4 +1,5 @@
 ESX = nil
+local armorTaken = false
 
 Citizen.CreateThread(function()
     
@@ -57,4 +58,32 @@ AddEventHandler("alpha:armor", function(source)
 		end)
 		
 	end
+end)
+
+RegisterNetEvent("alpha:updateArmor")
+AddEventHandler("alpha:updateArmor", function(armor)
+
+	ESX.SetTimeout(15000, function()
+		
+		SetPedArmour(PlayerPedId(), tonumber(armor))
+		armorTaken = true
+		
+	end)
+
+end)
+
+Citizen.CreateThread(function()
+
+	while true do
+
+		Citizen.Wait(2500)
+		if armorTaken == true then
+
+			TriggerServerEvent("alpha:armorDB", GetPedArmour(PlayerPedId()))
+			Citizen.Wait(10000)
+
+		end
+		
+	end
+
 end)
