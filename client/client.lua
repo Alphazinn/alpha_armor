@@ -24,8 +24,6 @@ AddEventHandler("alpha:armor", function(source)
 
 	elseif pedArmor < 100 then
 
-		FreezeEntityPosition(ped, true)
-
 		TriggerEvent("mythic_progbar:client:progress", {
 			name = "unique_action_name",
 			duration = 8000,
@@ -33,7 +31,7 @@ AddEventHandler("alpha:armor", function(source)
 			useWhileDead = false,
 			canCancel = true,
 			controlDisables = {
-				disableMovement = false,
+				disableMovement = true,
 				disableCarMovement = false,
 				disableMouse = false,
 				disableCombat = true,
@@ -51,8 +49,6 @@ AddEventHandler("alpha:armor", function(source)
 				FreezeEntityPosition(ped, false)
 
 			elseif status then
-
-				FreezeEntityPosition(ped, false)
 
 			end
 		end)
