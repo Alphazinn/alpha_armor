@@ -46,9 +46,6 @@ AddEventHandler("alpha:armor", function(source)
 				AddArmourToPed(ped, 100 - pedArmor)
 				TriggerServerEvent("alpha:removeArmor")
 				exports['mythic_notify']:DoHudText('success', 'Çelik Yelek Giydin!', { ['background-color'] = '#599958', ['color'] = '#ffffff' })
-				FreezeEntityPosition(ped, false)
-
-			elseif status then
 
 			end
 		end)
